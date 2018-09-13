@@ -66,11 +66,11 @@
 
 (defn make-basket
   "Create the basket from an arbitrary list of items.
-  Groups the items together to determine how many of each there are
-  then makes a "
+  Groups the items together to determine how many of each there are,
+  then makes a receipt entry for each grouping."
   [shopping-items]
   (->> (group-by :name shopping-items)
-       (map (fn [[name item-list]]
+       (map (fn [[name_ item-list]]
               (make-receipt-entry (first item-list)
                                   (count item-list))))))
 
@@ -92,7 +92,6 @@
       (print (format "\nOFFERS   %.2f\n" discount-total))
       (print (format "\n          %.2f\n" (+ total discount-total)))))
     (println "\nThank you for shopping with us"))
-
 
 (defn print-receipt
   [basket]
@@ -125,7 +124,6 @@
       (swap! total + (:price receipt-item) (:offer receipt-item)))
     (print (format "\nTOTAL     %.2f\n" @total))
     (println "\nThank you for shopping with us")))
-
 
 (defn -main [& args]
   (print-receipt (make-basket shopping-items)))
