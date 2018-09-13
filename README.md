@@ -1,5 +1,22 @@
 ## A Simple Java and Clojure Code Comparison Example
 
+- [A Simple Java and Clojure Code Comparison Example](#a-simple-java-and-clojure-code-comparison-example)
+- [Problem Spec](#please-write-a-program-to-represent-the-following-scenario-)
+- [Notes](#notes)
+- [Solution](#solution)
+  * [Java](#java)
+    + [Offer Functional Interface](#offer-functional-interface)
+    + [Offer Functions](#offer-functions)
+    + [Grouping Purchased Items](#grouping-purchased-items)
+    + [Generating The Receipt Entries](#generating-the-receipt-entries)
+    + [Printing The Receipt](#printing-the-receipt)
+  * [Clojure](#clojure)
+    + [Offer Functions](#offer-functions-1)
+    + [Grouping Purchased Items](#grouping-purchased-items-1)
+    + [Generating The Receipt Entries](#generating-the-receipt-entries-1)
+    + [Printing The Receipt](#printing-the-receipt-1)
+  * [Summary](#summary)
+
 In the initial stage of a job application I was asked to code up a problem, specifically in Java. Here's the spec:
 
 > Recruitment Code Submission
